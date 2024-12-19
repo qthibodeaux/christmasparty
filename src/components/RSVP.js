@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Typography, TextField, Button } from '@mui/material';
+import { Box, Typography, TextField, Button, Card } from '@mui/material';
 
 const RSVP = () => {
   const [form, setForm] = useState({ name: '', phone: '', message: '' });
@@ -14,7 +14,15 @@ const RSVP = () => {
   };
 
   return (
-    <Box sx={{ textAlign: 'center', py: 4 }}>
+    <Card
+      sx={{
+        backgroundColor: 'background.paper',
+        padding: 2,
+        margin: 2,
+        textAlign: 'center',
+        boxShadow: 3,
+      }}
+    >
       <Typography variant="h4" sx={{ mb: 2 }}>
         RSVP
       </Typography>
@@ -52,7 +60,7 @@ const RSVP = () => {
           Send RSVP
         </Button>
       </Box>
-    </Box>
+    </Card>
   );
 };
 

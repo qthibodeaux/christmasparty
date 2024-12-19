@@ -1,12 +1,11 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
-import Fam from '../assets/fam.jpg';
+import { Box, Typography, Card } from '@mui/material';
 
 const Hero = () => {
   return (
-    <Box
+    <Card
       sx={{
-        backgroundImage: `url(${Fam})`,
+        backgroundImage: `url('/path-to-family-photo.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
@@ -15,8 +14,12 @@ const Hero = () => {
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        color: '#FFF',
         position: 'relative',
+        boxShadow: 3,
+        borderRadius: 2,
+        margin: 2,
+        padding: 3,
+        color: '#FFF',
       }}
     >
       <Box
@@ -32,7 +35,7 @@ const Hero = () => {
       <Typography variant="h5" sx={{ zIndex: 1, marginTop: '10px' }}>
         Christmas Party 2024
       </Typography>
-    </Box>
+    </Card>
   );
 };
 

@@ -3,7 +3,8 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     background: {
-      default: '#333333', // Dark grey background
+      default: '#333333', // Dark grey website background
+      paper: '#4d4d4d', // Lighter grey for cards
     },
     text: {
       primary: '#FFFFFF', // White text

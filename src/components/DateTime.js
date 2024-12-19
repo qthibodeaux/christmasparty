@@ -1,13 +1,16 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Card } from '@mui/material';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 const DateTime = () => (
-  <Box
+  <Card
     sx={{
-      textAlign: 'center',
+      backgroundColor: 'background.paper',
       color: 'text.primary',
-      py: 4,
+      padding: 2,
+      margin: 2,
+      textAlign: 'center',
+      boxShadow: 3,
     }}
   >
     <CalendarTodayIcon sx={{ fontSize: 50, color: 'warning.main' }} />
@@ -15,7 +18,7 @@ const DateTime = () => (
       Christmas Eve
     </Typography>
     <Typography variant="h6">December 24th, 6:00 PM</Typography>
-  </Box>
+  </Card>
 );
 
 export default DateTime;

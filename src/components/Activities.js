@@ -1,5 +1,12 @@
 import React from 'react';
-import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
+import {
+  Box,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+  Card,
+} from '@mui/material';
 
 const activities = [
   'Family Trivia Game',
@@ -9,7 +16,15 @@ const activities = [
 ];
 
 const Activities = () => (
-  <Box sx={{ textAlign: 'center', py: 4 }}>
+  <Card
+    sx={{
+      backgroundColor: 'background.paper',
+      padding: 2,
+      margin: 2,
+      textAlign: 'center',
+      boxShadow: 3,
+    }}
+  >
     <Typography variant="h4" sx={{ mb: 2 }}>
       Activities
     </Typography>
@@ -23,7 +38,7 @@ const Activities = () => (
         </ListItem>
       ))}
     </List>
-  </Box>
+  </Card>
 );
 
 export default Activities;

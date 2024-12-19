@@ -1,10 +1,25 @@
 import React from 'react';
-import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
+import {
+  Box,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+  Card,
+} from '@mui/material';
 
 const foods = ['Wings', 'Fries', 'Queso', 'Salad', 'Desserts', 'Drinks'];
 
 const FoodAndDrinks = () => (
-  <Box sx={{ textAlign: 'center', py: 4 }}>
+  <Card
+    sx={{
+      backgroundColor: 'background.paper',
+      padding: 2,
+      margin: 2,
+      textAlign: 'center',
+      boxShadow: 3,
+    }}
+  >
     <Typography variant="h4" sx={{ mb: 2 }}>
       Food & Drinks
     </Typography>
@@ -18,7 +33,7 @@ const FoodAndDrinks = () => (
         </ListItem>
       ))}
     </List>
-  </Box>
+  </Card>
 );
 
 export default FoodAndDrinks;

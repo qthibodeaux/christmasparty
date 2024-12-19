@@ -1,8 +1,16 @@
 import React from 'react';
-import { Box, Typography, Link } from '@mui/material';
+import { Box, Typography, Link, Card } from '@mui/material';
 
 const Location = () => (
-  <Box sx={{ textAlign: 'center', py: 4 }}>
+  <Card
+    sx={{
+      backgroundColor: 'background.paper',
+      padding: 2,
+      margin: 2,
+      textAlign: 'center',
+      boxShadow: 3,
+    }}
+  >
     <iframe
       src="https://www.google.com/maps/embed/v1/place?q=17215+Brookhollow+Trace+Ct,+Houston,+TX+77084&key=YOUR_GOOGLE_API_KEY"
       style={{
@@ -25,7 +33,7 @@ const Location = () => (
     >
       17215 Brookhollow Trace Ct, Houston, TX 77084
     </Link>
-  </Box>
+  </Card>
 );
 
 export default Location;
