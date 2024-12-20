@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Typography, Card } from '@mui/material';
+import Fam from '../assets/fam.jpg'; // Import the image
 
 const Hero = () => {
   return (
     <Card
       sx={{
-        backgroundImage: `url('/path-to-family-photo.jpg')`,
+        backgroundImage: `url(${Fam})`, // Use the imported image
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',

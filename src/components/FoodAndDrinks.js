@@ -1,39 +1,50 @@
 import React from 'react';
-import {
-  Box,
-  Typography,
-  List,
-  ListItem,
-  ListItemText,
-  Card,
-} from '@mui/material';
+import { Card, CardContent, Typography, Grid } from '@mui/material';
+import FoodImage from '../assets/food.png'; // Add your food image to the assets folder
 
-const foods = ['Wings', 'Fries', 'Queso', 'Salad', 'Desserts', 'Drinks'];
-
-const FoodAndDrinks = () => (
-  <Card
-    sx={{
-      backgroundColor: 'background.paper',
-      padding: 2,
-      margin: 2,
-      textAlign: 'center',
-      boxShadow: 3,
-    }}
-  >
-    <Typography variant="h4" sx={{ mb: 2 }}>
-      Food & Drinks
-    </Typography>
-    <List>
-      {foods.map((food, index) => (
-        <ListItem key={index} sx={{ justifyContent: 'center' }}>
-          <ListItemText
-            primary={food}
-            sx={{ textAlign: 'center', color: 'text.primary' }}
-          />
-        </ListItem>
-      ))}
-    </List>
-  </Card>
-);
+const FoodAndDrinks = () => {
+  return (
+    <Card
+      sx={{
+        backgroundColor: '#444',
+        color: 'white',
+        margin: '16px',
+        padding: '16px',
+      }}
+    >
+      <CardContent>
+        <Typography
+          variant="h4"
+          sx={{ color: 'darkgold', marginBottom: '8px' }}
+        >
+          Food & Drinks
+        </Typography>
+        <img
+          src={FoodImage}
+          alt="Food"
+          style={{ width: '100%', marginBottom: '16px' }}
+        />
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <ul>
+              <li>Wings</li>
+              <li>Fries</li>
+              <li>Queso</li>
+              <li>Salad</li>
+            </ul>
+          </Grid>
+          <Grid item xs={6}>
+            <ul>
+              <li>Desserts</li>
+              <li>Soda</li>
+              <li>Tea</li>
+              <li>Wine</li>
+            </ul>
+          </Grid>
+        </Grid>
+      </CardContent>
+    </Card>
+  );
+};
 
 export default FoodAndDrinks;

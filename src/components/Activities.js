@@ -1,44 +1,40 @@
 import React from 'react';
-import {
-  Box,
-  Typography,
-  List,
-  ListItem,
-  ListItemText,
-  Card,
-} from '@mui/material';
+import { Card, CardContent, Typography } from '@mui/material';
+import ActivitiesImage from '../assets/activities.png'; // Add your activities image to the assets folder
 
-const activities = [
-  'Family Trivia Game',
-  'Festive Photo Booth',
-  'Christmas Character Meet & Greet',
-  'Fun Games for Everyone',
-];
-
-const Activities = () => (
-  <Card
-    sx={{
-      backgroundColor: 'background.paper',
-      padding: 2,
-      margin: 2,
-      textAlign: 'center',
-      boxShadow: 3,
-    }}
-  >
-    <Typography variant="h4" sx={{ mb: 2 }}>
-      Activities
-    </Typography>
-    <List>
-      {activities.map((activity, index) => (
-        <ListItem key={index} sx={{ justifyContent: 'center' }}>
-          <ListItemText
-            primary={activity}
-            sx={{ textAlign: 'center', color: 'text.primary' }}
-          />
-        </ListItem>
-      ))}
-    </List>
-  </Card>
-);
+const Activities = () => {
+  return (
+    <Card
+      sx={{
+        backgroundColor: '#444',
+        color: 'white',
+        margin: '16px',
+        padding: '16px',
+      }}
+    >
+      <CardContent>
+        <Typography
+          variant="h4"
+          sx={{ color: 'darkgold', marginBottom: '8px' }}
+        >
+          What
+        </Typography>
+        <img
+          src={ActivitiesImage}
+          alt="Activities"
+          style={{ width: '100%', marginBottom: '16px' }}
+        />
+        <Typography
+          variant="body1"
+          sx={{ color: 'lightgray', lineHeight: 1.6 }}
+        >
+          - Food <br />
+          - Games <br />
+          - Activities <br />- Family & Fun
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+};
 
 export default Activities;
