@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography } from '@mui/material';
-import ActivitiesImage from '../assets/activities.png'; // Add your activities image to the assets folder
+import ActivitiesImage from '../assets/family.jpg'; // Add your activities image to the assets folder
 
 const Activities = () => {
   return (

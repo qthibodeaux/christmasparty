@@ -30,15 +30,13 @@ const FoodAndDrinks = () => {
               <li>Wings</li>
               <li>Fries</li>
               <li>Queso</li>
-              <li>Salad</li>
             </ul>
           </Grid>
           <Grid item xs={6}>
             <ul>
-              <li>Desserts</li>
+              <li>Salad</li>
               <li>Soda</li>
-              <li>Tea</li>
-              <li>Wine</li>
+              <li>Water</li>
             </ul>
           </Grid>
         </Grid>
