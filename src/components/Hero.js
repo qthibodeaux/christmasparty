@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Typography, Card } from '@mui/material';
-import Fam from '../assets/fam.jpg'; // Import the image
 import Granny from '../assets/granny2.jpg';
 
 const Hero = () => {
