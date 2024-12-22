@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/christmasparty/static/css/main.e6c13ad2.css",
-    "main.js": "/christmasparty/static/js/main.e53c855f.js",
-    "static/media/fam.jpg": "/christmasparty/static/media/fam.8efa5c3147d698bfbd1d.jpg",
+    "main.js": "/christmasparty/static/js/main.002c6d74.js",
     "static/media/granny2.jpg": "/christmasparty/static/media/granny2.85b39e54e9563add5739.jpg",
     "static/media/family.jpg": "/christmasparty/static/media/family.e371201af88c84c88909.jpg",
     "static/media/map.png": "/christmasparty/static/media/map.9fba6517f426aa5a98f3.png",
@@ -10,10 +9,10 @@
     "static/media/calendar.png": "/christmasparty/static/media/calendar.79536173d05304bdcb4c.png",
     "index.html": "/christmasparty/index.html",
     "main.e6c13ad2.css.map": "/christmasparty/static/css/main.e6c13ad2.css.map",
-    "main.e53c855f.js.map": "/christmasparty/static/js/main.e53c855f.js.map"
+    "main.002c6d74.js.map": "/christmasparty/static/js/main.002c6d74.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.e53c855f.js"
+    "static/js/main.002c6d74.js"
   ]
 }
