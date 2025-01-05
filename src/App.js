@@ -4,7 +4,6 @@ import DateTime from './components/DateTime';
 import Location from './components/Location';
 import Activities from './components/Activities';
 import FoodAndDrinks from './components/FoodAndDrinks';
-import RSVP from './components/RSVP';
 import Who from './components/Who';
 
 const App = () => (
